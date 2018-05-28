@@ -14,10 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 	@CrossOrigin(origins = "http://localhost:4200")
     @RequestMapping(value = "/users", method = { RequestMethod.GET })
+	
+	
     public List<UserViewModel> listAllUsers() {
     	
     	List<UserViewModel> userList = new ArrayList<>();
-    	
     	userList.add(new UserViewModel("Davis", "Molinari", "Italy", 34));
     	userList.add(new UserViewModel("Lionel", "Messi", "Argentina", 30));
     	userList.add(new UserViewModel("Jason", "Bourne", "US", 30));
