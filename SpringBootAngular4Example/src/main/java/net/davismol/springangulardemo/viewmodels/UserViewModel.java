@@ -12,14 +12,7 @@ public class UserViewModel {
 	private String country;
 	private int age;
 	
-	public UserViewModel(String firstname, String lastname, String country, int age) {
-		this.firstname = firstname;
-		this.lastname = lastname;
-		this.country = country;
-		this.age = age;
-	}
-	
-	
+/*	
 	public String getFirstname() {
 		return firstname;
 	}
@@ -43,5 +36,7 @@ public class UserViewModel {
 	}
 	public void setAge(int age) {
 		this.age = age;
-	}
+	} 
+	
+	*/
 }
