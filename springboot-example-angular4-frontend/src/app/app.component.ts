@@ -10,7 +10,7 @@ import { UserApiService } from './services/user-api.service';
 
 export class AppComponent implements OnInit {
 
-  title = 'davismol.net Tutorial';
+  title = 'Applicazione con Spring Boot Angular';
   users: User[];
 
   constructor(private userService: UserApiService) { }
