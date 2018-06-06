@@ -11,10 +11,15 @@ import javax.persistence.Id;
 public class UserViewModel {
 	@Id
     @GeneratedValue(strategy=GenerationType.AUTO)
+	private long id;
 	private String firstname;
 	private String lastname; 
 	private String country;
 	private int age;
+	
+	public UserViewModel() {
+		
+	}
 	
 
 }
