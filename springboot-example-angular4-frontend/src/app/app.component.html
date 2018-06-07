@@ -4,7 +4,7 @@
     {{title}}
   </h1>
 </div>
-<div>
+<div *ngIf="isUserLoggedIn">
   <h1>
     List of Users
   </h1>
@@ -17,5 +17,13 @@
 		<tbody>
 			<tr app-user-details *ngFor="let u of users" [user]="u"></tr>
 		</tbody>
-		</table>
-		</div>
+	</table>
+	<button (click) = "switchLog()"> Logout </button>
+</div>
+
+	
+
+
+<div *ngIf="!isUserLoggedIn">
+<button (click) = "switchLog()">  Login </button>
+</div>
